@@ -12,20 +12,36 @@ Collect environmental data such as:
 - Humidity
 - CO₂
 
-and transmit to cloud services for monitoring.
+and transmit the data to cloud services for monitoring and analysis.
 
 ## Hardware
 
-Board: ESP32 WROOM-32D
+Board: ESP8266 (ESP-12F)
 
 ## Reason for Selection
 
-ESP32 provides:
+The ESP8266 was selected because:
 
-- Dual-core processor
-- More RAM
-- Better TLS support
-- Bluetooth capability
-- Multiple ADC channels
+- It provides built-in WiFi connectivity.
+- It is low-cost and widely available.
+- It consumes relatively low power.
+- It is suitable for simple sensor-monitoring applications.
+- It offers sufficient performance for transmitting environmental data to cloud platforms.
 
-making it suitable for MQTT-based secure telemetry systems.
+## Future Sensors
+
+- DHT22 Temperature and Humidity Sensor
+- CO₂ Sensor (to be added in later stages)
+
+## Repository Structure
+
+wifi-edge-node/
+├── src/
+├── include/
+├── data/
+├── docs/
+└── README.md
+
+## Application
+
+This edge node will be deployed in a polyhouse mushroom cultivation environment to monitor environmental conditions and send telemetry data to the cloud for remote supervision.
