@@ -21,8 +21,14 @@ ESP32:
 - Bluetooth support
 - Better for MQTT + TLS
 
-## DHT22 Pin Planning
-Suggested Data Pin: D2 (GPIO4)
+## DHT22 Pin Mapping
+
+DHT22 VCC  -> 3.3V
+DHT22 DATA -> D2 (GPIO4)
+DHT22 GND  -> GND
+
+Note:
+D2 (GPIO4) is selected as a safe GPIO for DHT22 communication.
 
 ## Learning Outcome
 Successfully flashed a blink sketch and learned the differences between ESP8266 and ESP32.
